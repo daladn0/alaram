@@ -34,3 +34,48 @@
     line-height: 180%;
     color: #F2F5FF;
 }
+
+@media screen and ( max-width: 1640px ) {
+    .container {
+        img {
+            width: 45%;
+        }
+    }
+
+    .about {
+        padding: 8rem 0;
+    }
+}
+
+@media screen and ( max-width: 1200px ) {
+    .about {
+        max-width: 50%;
+    }
+}
+
+@media screen and ( max-width: 991px ) {
+    .text {
+        font-size: 15px;
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    .container img {
+        display: none;
+    }
+
+    .about {
+        padding: 4rem 0;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+}

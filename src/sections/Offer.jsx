@@ -10,7 +10,9 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 const Offer = () => {
     const responsive = {
-        0: { items: 4 },
+        0: { items: 1 },
+        767: { items: 2 },
+        1200: { items: 4 }
     };
 
     useEffect(() => {

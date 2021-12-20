@@ -146,3 +146,122 @@
 		background-position: 0% 50%;
 	}
 }
+
+@media screen and ( max-width: 1640px ) {
+    .card {
+        min-height: unset;
+        img {
+            max-width: 25%;
+        }
+
+        .text {
+            max-width: 100%;
+            font-size: 14px;
+        }
+
+        button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .price {
+            margin-bottom: 0;
+            position: absolute;
+            left: 50%;
+            bottom: 90px;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media screen and ( max-width: 1200px ) {
+    .offer {
+        padding: 2rem;
+    }
+
+    .content {
+        justify-content: flex-end;
+    }
+
+    .card {
+        justify-content: flex-end;
+        text-align: center;
+        
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+            img {
+                top: 5%;
+            }
+        }
+
+        img {
+            max-width: 20%;
+        }
+
+        .price {
+            position: unset;
+            transform: unset;
+        }
+
+        button {
+            position: unset;
+            transform: unset;
+            margin-top: 20px;
+        }
+    }
+
+    .info {
+        padding-top: 15rem;
+    }
+}
+
+@media screen and ( max-width: 991px ) {
+    .info {
+        padding-top: 12rem;
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    .card {
+        img {
+            max-width: 15%;
+        }
+    }
+}
+
+@media screen and ( max-width: 576px ) {
+    .heading {
+        margin-bottom: 5rem;
+        p {
+            max-width: 95%;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+        }
+    }
+
+    .card {
+        img {
+            max-width: 25%;
+            top: 10%;
+        }
+
+        &:hover {
+            img {
+                top: 5%;
+            }
+        }
+
+        .price {
+            font-size: 18px;
+        }
+
+        button {
+            padding: .7rem 1.5rem;
+        }
+    }
+}
