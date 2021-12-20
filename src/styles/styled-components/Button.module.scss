@@ -1,0 +1,16 @@
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: var(--gradient);
+
+    
+    font-family: var(--font-source);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #F2F5FF;
+    cursor: pointer;
+    transition: all .1s linear;
+}

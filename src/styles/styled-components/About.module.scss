@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    
+    img {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.about {
+    max-width: 670px;
+    padding: 22rem 0;
+
+    p {
+        text-align: left;
+    }
+
+    h2 {
+        margin: 0;
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.text {
+    max-width: 576px;
+    margin-bottom: 3.1rem;
+    font-family: "Open Sans", var(--font-poppins);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 180%;
+    color: #F2F5FF;
+}

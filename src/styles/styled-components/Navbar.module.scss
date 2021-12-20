@@ -1,0 +1,46 @@
+.navbar {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    button {
+        margin-left: 8rem;
+    }
+}
+
+.links {
+    a {
+        position: relative;
+        margin-left: 40px;
+        font-family: var(--font-source);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: #F2F5FF;
+        text-decoration: none;
+        transition: all .2s linear;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background: #fff;
+            transition: all .1s linear;
+        }
+
+        &:hover:after {
+            left: 0;
+            width: 100%;
+        }
+    }
+}

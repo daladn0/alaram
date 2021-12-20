@@ -1,0 +1,109 @@
+.forms {
+    position: relative;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    padding: 4.5rem 6rem;
+    width: 660px;
+    height: 317px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--gradient);
+    border-radius: 6px;
+
+    &:last-child {
+        background: var(--gradient-secondary);
+        margin-left: 40px;
+    }
+
+    p {
+        margin-bottom: 1.1rem;
+        font-family: var(--font-quicksand);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+    }
+
+    h3 {
+        margin-bottom: 1.5rem;
+        font-family: var(--font-poppins);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 130%;
+        letter-spacing: -1px;
+        color: #F2F5FF;
+    }
+
+    div{
+        display: flex;
+
+        input {
+            width: 100%;
+            padding: 1rem 1.9rem;
+            height: 50px;
+            background: rgba($color: #F2F5FF, $alpha: .7);
+            mix-blend-mode: normal;
+            border-radius: 6px 0 0 6px;
+            outline: none;
+            border: none;
+
+            font-family: var(--font-quicksand);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            color: #040D2A;
+
+            &::placeholder {
+                font-family: var(--font-quicksand);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 25px;
+                color: #040D2A;
+            }
+        }
+    
+        button {
+            border-radius: 0 6px 6px 0;
+        }
+    }
+
+    button {
+        height: 50px;
+        padding: 1rem 2.2rem;
+        background: rgba($color: #F2F5FF, $alpha: .7);
+        border-radius: 6px;
+
+        font-family: "Open Sans", var(--font-poppins);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 100%;
+        color: #040D2A;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.effect {
+    position: absolute;
+    left: -25%;
+    top: 5%;
+    z-index: -1;
+
+    width: 656px;
+    height: 656px;
+    background: radial-gradient(50% 50% at 50% 50%, #031346 0%, rgba(3, 19, 70, 0) 100%);
+    backdrop-filter: blur(200px);
+}
